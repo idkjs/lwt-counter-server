@@ -1,8 +1,0 @@
-lib: [
-  "_build/install/default/lib/app/META"
-  "_build/install/default/lib/app/dune-package"
-  "_build/install/default/lib/app/opam"
-]
-doc: [
-  "_build/install/default/doc/app/README.md"
-]

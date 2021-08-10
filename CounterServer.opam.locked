@@ -1,5 +1,5 @@
 opam-version: "2.0"
-name: "app"
+name: "CounterServer"
 version: "~dev"
 synopsis: "A short, but powerful statement about your project"
 description: "A short, but powerful statement about your project"

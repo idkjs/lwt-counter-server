@@ -12,7 +12,7 @@
 (generate_opam_files true)
 
 (package
- (name app)
+ (name CounterServer)
  (synopsis "A short, but powerful statement about your project")
  (description "A short, but powerful statement about your project\n")
  (depends
