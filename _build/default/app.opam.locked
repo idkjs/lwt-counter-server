@@ -1,0 +1,28 @@
+opam-version: "2.0"
+name: "app"
+version: "~dev"
+synopsis: "A short, but powerful statement about your project"
+description: "A short, but powerful statement about your project"
+maintainer: "Alain"
+authors: "Alain"
+license: "MIT"
+homepage: "https://github.com/idkjs/lwt-counter-server"
+bug-reports: "https://github.com/idkjs/lwt-counter-server/issues"
+build: [
+  ["dune" "subst" "--root" "."] {dev}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "--promote-install-files"
+    "false"
+    "@install"
+    "@runtest" {with-test}
+    "@doc" {with-doc}
+  ]
+  ["dune" "install" "-p" name "--create-install-files" name]
+]
+dev-repo: "git+https://github.com/idkjs/lwt-counter-server.git"

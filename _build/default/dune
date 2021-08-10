@@ -1,0 +1,6 @@
+(executable
+ (name CounterServer)
+ (libraries lwt lwt.unix logs logs.lwt))
+
+
+
